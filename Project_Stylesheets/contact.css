@@ -1,0 +1,121 @@
+.contact-section {
+  padding: 4rem 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.8;
+  color: #333;
+  background-color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.contact-section p {
+  font-size: 1.2rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.form-message {
+  margin-top: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #e67e22;
+  background-color: #fff;
+}
+
+.contact-form .btn {
+  background-color: #e67e22;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form .btn:hover {
+  background-color: #cf711f;
+}
+
+body.dark .contact-section {
+  background-color: #1f1f1f;
+  color: #ddd;
+}
+
+body.dark .contact-section h2 {
+  color: #f9f9f9;
+}
+
+body.dark .contact-section p {
+  color: #ccc;
+}
+
+body.dark .form-group label {
+  color: #ddd;
+}
+
+body.dark .form-group input,
+body.dark .form-group textarea {
+  background-color: #2c2c2c;
+  color: #f1f1f1;
+  border-color: #555;
+}
+
+body.dark .form-group input:focus,
+body.dark .form-group textarea:focus {
+  background-color: #333;
+  color: #fff;
+  border-color: #f39c12;
+}
+
+body.dark .contact-form .btn {
+  background-color: #f39c12;
+  color: #1f1f1f;
+}
+
+body.dark .contact-form .btn:hover {
+  background-color: #e67e22;
+}

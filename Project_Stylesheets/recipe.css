@@ -1,0 +1,98 @@
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background-color: #fdfdfd;
+  transition: background-color 0.3s ease;
+}
+
+.recipe-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.recipe-card h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4rem;
+  margin: 0.8rem 0 0.4rem;
+  color: #2c3e50;
+}
+
+.recipe-card p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.95rem;
+  color: #555;
+  padding: 0 1rem 1rem;
+}
+
+/* Region Buttons */
+.region-buttons {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.region-buttons button {
+  background-color: #e67e22;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  margin: 0 0.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.region-buttons button:hover {
+  background-color: #cf711f;
+}
+
+/* Hide/show functionality for filtering */
+.hidden {
+  display: none;
+}
+
+/* Dark Mode Support */
+body.dark .recipe-grid {
+  background-color: #1f1f1f;
+}
+
+body.dark .recipe-card {
+  background-color: #2a2a2a;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+}
+
+body.dark .recipe-card h3 {
+  color: #f9f9f9;
+}
+
+body.dark .recipe-card p {
+  color: #ccc;
+}
+
+body.dark .region-buttons button {
+  background-color: #f39c12;
+  color: #1f1f1f;
+}
+
+body.dark .region-buttons button:hover {
+  background-color: #e67e22;
+}

@@ -1,0 +1,26 @@
+@media screen and (max-width: 800px) {
+    .nav .container{
+        padding: 0 20px;
+    }
+    .nav_list{
+        position: absolute;
+        width: 220px;
+        height: 100vh;
+        top: 100%;
+        right: -400px;
+        flex-direction: column;
+        z-index: 999999;
+        padding: 30px;
+        background-color: white;
+        transition: 0.3s ease-in-out;
+    }
+    .dark .nav_list{
+        background-color: #121212;
+    }
+    .navon_off{
+        display: block;
+    }
+
+
+    
+}
